@@ -1,0 +1,41 @@
+/* Cursive Fonts */
+
+@font-face {
+    font-family: myCursive0;
+    src: url(../Fonts/Cursive/AL_Nevrada.ttf);
+    font-style: normal;
+    font-weight: 200;
+  }
+  
+  @font-face {
+    font-family: myCursive1;
+    src: url(../Fonts/Cursive/NeutonCursive-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: myCursive2;
+    src: url(../Fonts/Cursive/bright.ttf);
+  }
+  
+  @font-face {
+    font-family: myCursive3;
+    src: url(../Fonts/Cursive/Bizantheum.otf);
+  }
+
+
+  /* Regular Fonts */
+
+  @font-face {
+    font-family: myNormal0;
+    src: url(../Fonts/Raleway-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: myNormal1;
+    src: url(../Fonts/Regular/Marshland_Beauty.otf);
+  }
+
+  @font-face {
+    font-family: myNormal2;
+    src: url(../Fonts/Regular/GlacialIndifference-Regular.otf);
+  }

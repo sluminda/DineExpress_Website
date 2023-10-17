@@ -1,0 +1,162 @@
+/* Heading */
+
+.wrapper-0 {
+    position: relative;
+    top: 0;
+    background-image: linear-gradient(rgba(126, 126, 126, 0.747), rgb(255, 255, 255));
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.box1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+}
+
+.box1 img {
+    width: 220px;
+}
+
+.box2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.box2 h1 {
+    color: rgb(0, 0, 0);
+    font-family: myCursive3;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.box3 {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.box3 img {
+    width: 200px;
+}
+
+
+/* Body content */
+
+.wrapper-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+}
+
+.box-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 120px;
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.box-1 h1{
+    font-family: myNormal2;
+}
+
+.box-1 p{
+    font-family: myNormal2;
+    font-size:1.5rem;
+    margin-top: 1rem;
+}
+
+.box-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    gap: 2vw;
+    border: 1px solid #333;
+    border-radius: 2rem;
+}
+
+/* Form Items */
+
+.box-2 .label{
+    font-size: 1.3rem;
+    font-family: myNormal2;
+}
+
+.box-2 .input{
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    width: 30vw;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+#messege{
+    resize: vertical;
+}
+
+.input::placeholder{
+    font-family: myNormal2;
+}
+
+.box-3 {
+    display:flex;
+    margin-right: 2rem;
+    margin-top: 2rem;
+}
+
+.box-3 iframe {
+    width: 40vw;
+    height: 40vw;
+    border: 1px solid #333;
+    border-radius: 2rem;
+    overflow: hidden;
+    padding: 15px;
+}
+
+
+
+
+
+
+
+/* Resolution 1200px below */
+
+@media (max-width: 1200px) {
+    .box1 img {
+        width: 15vw;
+    }
+
+    .box3 img {
+        width: 15vw;
+    }
+}
+
+
+/* Resolution 600px below */
+
+@media (max-width: 600px) {}
+
+
+/* Resolution 360px below */
+
+@media (max-width: 360px) {}
+
+
+/* Resolution 300px below */
+
+@media (max-width: 300px) {}
