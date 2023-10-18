@@ -53,7 +53,7 @@
 }
 
 h2 span{
-  color: rgba(22, 192, 59, 0.788);
+  color: #FFA500;
 }
 
 .image-data h2 {
@@ -87,7 +87,7 @@ a.button {
 
 a.button:hover {
   color: rgb(255, 255, 255);
-  background-color: rgb(17, 161, 48, 0.788);
+  background-color: #FFA500;
 }
 
 /* Swiper button Override */
