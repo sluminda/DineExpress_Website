@@ -26,7 +26,7 @@ header {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-between;
 }
 
 li {
@@ -97,11 +97,22 @@ a:hover {
 
 .search input[type="text"] {
     border: 0px;
-    width: auto;
     background-color: transparent;
     color: #ffffff;
-    padding: 8px;
+    padding-top: 8px;
     font-size: 16px;
+    width: 0;
+    transition: width 0.3s ease; 
+}
+
+.hide {
+    width: 0%;
+    padding-left: 0;
+}
+
+.show {
+    width: 100px;
+    padding: 8px;
 }
 
 .search input[type="text"]:focus {
@@ -110,7 +121,8 @@ a:hover {
 }
 
 .search input[type="text"]::placeholder {
-    color:#b6b6b6e3;
+    color: rgba(196, 196, 196, 0.781);
+    font-size: small;
 }
 
 .search button {
@@ -121,7 +133,9 @@ a:hover {
     float: right;
     padding: 10px;
     cursor: pointer;
+    /* border-radius: 20px; */
 }
+
 
 
 /* Action BTN Wide */
