@@ -13,10 +13,10 @@ header {
     position: sticky;
     top: 0%;
     padding: 3px 1rem;
-    background: rgba(0, 0, 0, 0.671);
+    background: rgba(255, 255, 255, 0.87);
     z-index: 2;
     font-family: 'open sans', sans-serif;
-    /* backdrop-filter: blur(10px); */
+    backdrop-filter: blur(5px);
 }
 
 .navbar {
@@ -35,11 +35,13 @@ li {
 }
 
 .links a {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
     text-decoration: none;
-    color: #04030f;
-    font-size: 1rem;
     padding-top: 20px;
     padding-bottom: 20px;
+    color: #04030f;
+    font-size: 1rem;
 }
 
 .links li {
@@ -53,7 +55,7 @@ li {
     height: 2px;
     bottom: -4px;
     left: 0;
-    background-color: gold;
+    background-color: rgb(17, 161, 48, 0.788);
     transition: width 0.3s ease-in-out;
 }
 
@@ -61,14 +63,8 @@ li {
     width: 100%;
 }
 
-.links a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 1.1rem;
-}
-
 a:hover {
-    color: gold;
+    color: rgb(17, 161, 48, 0.788);
 }
 
 .navbar .main_logo {
@@ -83,13 +79,18 @@ a:hover {
 }
 
 .navbar .toggle_btn {
-    color: rgb(255, 255, 255);
-    font-size: 1.5rem;
+    color: #04030f;
+    font-size: 1rem;
     cursor: pointer;
     display: none;
 }
 
 /* Search Bar */
+
+.search-form-wide {
+    display: inline-flex;
+    position: relative;
+}
 
 .search {
     overflow: auto;
@@ -128,11 +129,12 @@ a:hover {
 .search button {
     border: 0px;
     background: none;
-    background-color: rgba(165, 165, 165, 0.404);
+    background-color: rgba(0, 0, 0, 0.568);
     color: #fff;
     float: right;
     padding: 10px;
     cursor: pointer;
+    border-radius: 25px;
     /* border-radius: 20px; */
 }
 
@@ -172,8 +174,8 @@ a:hover {
 
 .btn1:hover {
     transform: scale(1.05);
-    color: #000000;
-    background-color: rgb(255, 231, 93);
+    color: #ffffff;
+    background-color: rgb(17, 161, 48, 0.788);
 }
 
 .btn2:hover {
@@ -191,7 +193,7 @@ a:hover {
     top: 80px;
     width: 300px;
     height: 0;
-    background: rgba(0, 0, 0, 0.788);
+    background: rgba(248, 248, 248, 0.788);
     border-radius: 10px;
     overflow: hidden;
     transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -201,7 +203,7 @@ a:hover {
 .dropdown_menu.open {
     padding-top: 10px;
     display: block;
-    height: 375px;
+    height: 410px;
 }
 
 .dropdown_menu li {
@@ -219,24 +221,25 @@ a:hover {
     gap: 25px;
     margin-top: 10px;
     margin-bottom: 15px;
-
 }
 
 .actionbtn {
+    font-family: Arial, Helvetica, sans-serif;
     padding: 0.5rem 1rem;
-    border: none;
     outline: none;
-    border-radius: 20px;
-    font-size: 0.8rem;
+    border-radius: 25px;
+    font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .dropdown_menu #dd_btn {
+    font-family:Arial, Helvetica, sans-serif;
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 1.1rem;
+    color: #04030f;
+    font-size: 1rem;
+    font-weight: bold;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 15px;
@@ -245,14 +248,14 @@ a:hover {
 
 .dropdown_menu #dd_btn:hover {
     transform: scale(1.05);
-    color: rgb(255, 231, 93);
+    color: rgba(17, 161, 48, 0.788);
 }
 
 .btn_1 {
     text-decoration: none;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
-    color: #000000;
+    color: #04030f;
     background-color: rgb(255, 255, 255);
 
 }
@@ -261,20 +264,19 @@ a:hover {
     text-decoration: none;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-    color: #000000;
-    background-color: #ffffffc7;
+    color: #04030f;
+    background-color: #ffffff;
 }
 
 .btn_1:hover {
     transform: scale(1.05);
-    color: #000000;
-    background-color: rgb(255, 231, 93);
+    color: #ffffff;
+    background-color: rgba(17, 161, 48, 0.788);
 }
 
 .btn_2:hover {
     transform: scale(1.05);
     color: #000000;
-    background-color: rgb(255, 255, 255);
 }
 
 /* End */
@@ -328,7 +330,7 @@ a:hover {
 @media (max-width: 820px) {
 
     .navbar .toggle_btn {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .navbar .links,
@@ -375,7 +377,7 @@ a:hover {
     }
 
     .navbar .toggle_btn {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     .dropdown_menu {
