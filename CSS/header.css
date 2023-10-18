@@ -26,7 +26,7 @@ header {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
 li {
@@ -35,7 +35,7 @@ li {
 }
 
 .links a {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-decoration: none;
     padding-top: 20px;
@@ -89,7 +89,6 @@ a:hover {
 
 .search-form-wide {
     display: inline-flex;
-    position: relative;
 }
 
 .search {
@@ -99,30 +98,29 @@ a:hover {
 .search input[type="text"] {
     border: 0px;
     background-color: transparent;
-    color: #ffffff;
+    color: #000000;
     padding-top: 8px;
     font-size: 16px;
     width: 0;
-    transition: width 0.3s ease; 
+    transition: width 0.3s ease;
 }
 
 .hide {
-    width: 0%;
     padding-left: 0;
 }
 
 .show {
-    width: 100px;
     padding: 8px;
 }
 
 .search input[type="text"]:focus {
     outline: 0;
-    border-bottom: 1px solid rgb(150, 150, 150);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.548);
 }
 
 .search input[type="text"]::placeholder {
-    color: rgba(196, 196, 196, 0.781);
+    font-family: myCursive4;
+    color: rgba(46, 46, 46, 0.781);
     font-size: small;
 }
 
@@ -135,10 +133,7 @@ a:hover {
     padding: 10px;
     cursor: pointer;
     border-radius: 25px;
-    /* border-radius: 20px; */
 }
-
-
 
 /* Action BTN Wide */
 
@@ -235,7 +230,7 @@ a:hover {
 }
 
 .dropdown_menu #dd_btn {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     color: #04030f;
     font-size: 1rem;
