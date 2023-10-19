@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <!-- Swiper CSS -->
+    <link href="./CSS/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Local CSS -->
+    <link href="./CSS/fonts.css" rel="stylesheet">
+    <link href="./CSS/header.css" rel="stylesheet">
+    <link href="./CSS/slidshow.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header starts from here -->
+    <header>
+        <div class="navbar">
+
+            <div class="logo"><a href="./home.html" class="Logo"><img src="./Items/Header/Logo.png" alt="logo"
+                        class="main_logo"></a></div>
+            <ul class="links">
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="About">About Us</a></li>
+                <li><a href="team">Our Team</a></li>
+                <li><a href="gallery">Gallery</a></li>
+                <li><a href="./HTML/contact.html">Contact Us</a></li>
+            </ul>
+
+            <!-- Search bar -->
+            <div class="search">
+                <form class="search-form-wide">
+                    <input class="hide" type="text" id="textInput" placeholder="Type Here.." onblur="onInputBlur()">
+                    <button type="button" onclick="onButtonClick()"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+
+
+            <div class="Action_BTN">
+                <a href="#" class="action_btn btn1">Sign Up</a>
+                <a href="#" class="action_btn btn2">Sign In</a>
+            </div>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="social">
+            <a href="#"><img class="icon" src="./Items/Header/1Facebook.png" alt="Facebook"></a>
+            <a href="#"><img class="icon" src="./Items/Header/2Instagram.png" alt="Instagram"></a>
+            <a href="#"><img class="icon" src="./Items/Header/3WhatsApp.png" alt="WhatsApp"></a>
+            <a href="#"><img class="icon" src="./Items/Header/4Youtube.png" alt="YouTube"></a>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a id="dd_btn" href="./home.html">Home</a></li>
+            <li><a id="dd_btn" href="About">About Us</a></li>
+            <li><a id="dd_btn" href="team">Our Team</a></li>
+            <li><a id="dd_btn" href="gallery">Gallery</a></li>
+            <li><a id="dd_btn" href="./HTML/contact.html">Contact Us</a></li>
+
+            <div class="ActionBTN">
+                <li><a href="#" class="actionbtn btn_1">Sign Up</a></li>
+                <li><a href="#" class="actionbtn btn_2">Sign In</a></li>
+            </div>
+
+            <div class="search">
+                <form class="search-form">
+                    <input class="hide" type="text" id="textInput" placeholder="Type Here.." onblur="onInputBlur()">
+                    <button type="button" onclick="onButtonClick()"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+
+            <div class="dropdown_social">
+                <a href="#"><img class="icon" src="./Items/Header/1Facebook.png" alt="Facebook"></a>
+                <a href="#"><img class="icon" src="./Items/Header/2Instagram.png" alt="Instagram"></a>
+                <a href="#"><img class="icon" src="./Items/Header/3WhatsApp.png" alt="WhatsApp"></a>
+                <a href="#"><img class="icon" src="./Items/Header/4Youtube.png" alt="YouTube"></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Body Starts - Slides -->
+
+    <section class="slideshow swiper mySwiper">
+        <div class="wrapper swiper-wrapper">
+
+            <!-- Image 01 -->
+            <div class="slide swiper-slide">
+                <img class="image" src="./Items/Slideshow/1.jfif" alt="Image 01" loading="lazy">
+                <div class="image-data">
+                    <span class="text">Welcome to DineExpress!</span>
+                    <h2>Morning <span>Eats</span><br>
+                        <h4>Start your day right with our breakfast classics</h4>
+                    </h2>
+                    <a href="./HTML/menu.html" class="button">Our Menu</a>
+                </div>
+            </div>
+
+            <!-- Image 02 -->
+            <div class="slide swiper-slide">
+                <img class="image" src="./Items/Slideshow/2.jpg" alt="Image 02" loading="lazy">
+                <div class="image-data">
+                    <span class="text">Welcome to DineExpress!</span>
+                    <h2>Midday <span>Bites</span><br>
+                        <h4>Savor our diverse lunch options</h4>
+                    </h2>
+                    <a href="/HTML/menu.html" class="button">Our Menu</a>
+                </div>
+            </div>
+
+            <!-- Image 03 -->
+            <div class="slide swiper-slide">
+                <img class="image" src="./Items/Slideshow/3.jpg" alt="Image 03" loading="lazy">
+                <div class="image-data">
+                    <span class="text">Welcome to DineExpress!</span>
+                    <h2>Evening <span>Feasts</span><br>
+                        <h4>Explore our delectable dinner choices</h4>
+                    </h2>
+                    <a href="/HTML/menu.html" class="button">Our Menu</a>
+                </div>
+            </div>
+
+            <!-- Image 04 -->
+            <div class="slide swiper-slide">
+                <img class="image" id="slide-1" src="./Items/Slideshow/4.png" alt="Image 04" loading="lazy">
+                <div class="image-data">
+                    <span class="text">Welcome to DineExpress!</span>
+                    <h2>Sweet <span>Treats</span><br>
+                        <h4>Treat yourself to our heavenly desserts</h4>
+                    </h2>
+                    <a href="/HTML/menu.html" class="button">Our Menu</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+    <footer>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="./JavaScript/swiper-bundle.min.js"></script>
+    <!-- Local JS -->
+    <script src="./JavaScript/header.js"></script>
+    <script src="./JavaScript/imageslider.js"></script>
+</body>
+</body>
+
+</html>
