@@ -1,7 +1,6 @@
 # DineExpress
 
-[Click here to visit Website](https://sluminda.github.io/DineExpress/)
-
+- **[Click here to visit Website]**(https://sluminda.github.io/DineExpress/){:target="_blank"}
 
 Welcome to the DineExpress project repository, an online restaurant food ordering website where users can conveniently order meals from four categories: Breakfast, Lunch, Dinner, and Dessert.
 
