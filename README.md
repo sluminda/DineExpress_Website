@@ -30,7 +30,7 @@ To get started with DineExpress, follow these steps:
 1. **Download the Repository:** 
    - Clone this repository to your local machine using the following command:
      ```bash
-     git clone https://github.com/sluminda/DineExpress_Website.git
+     git clone https://github.com/sluminda/DineExpress.git
      ```
 
 2. **View the Website:**
@@ -69,4 +69,5 @@ DineExpress is designed to make online food ordering a breeze. Here's how you ca
 ---
 
 Thank you for visiting our DineExpress project repository!
-# DineExpress_Website
+
+# DineExpress
