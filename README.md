@@ -62,8 +62,9 @@ DineExpress is designed to make online food ordering a breeze. Here's how you ca
 
 ## Contact
 
-kavindaa485@gmail.com
-sluminda@gmail.com
+- kavindaa485@gmail.com
+- sluminda@gmail.com
+- hashinishehara0@gmail.com
 
 ---
 
