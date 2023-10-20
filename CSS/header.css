@@ -6,17 +6,16 @@
 
 body {
     height: 100vh;
-    /*background-image: linear-gradient(rgba(255, 255, 255, 0.596), rgba(255, 255, 255, 0.65)), url(/Items/Header/resturent.jpg);/* */
 }
 
 header {
     position: sticky;
-    top: 0%;
+    top: 0;
     padding: 3px 1rem;
     background: rgba(255, 255, 255, 0.87);
     z-index: 2;
-    font-family: 'open sans', sans-serif;
-    /* backdrop-filter: blur(5px); */
+    font-family:Arial, Helvetica, sans-serif;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 30%, rgba(255, 255, 255, 0.897) 100%);
 }
 
 .navbar {
@@ -27,6 +26,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 2;
 }
 
 li {
@@ -40,7 +40,7 @@ li {
     text-decoration: none;
     padding-top: 20px;
     padding-bottom: 20px;
-    color: #04030f;
+    color: #232b2b;
     font-size: 1rem;
 }
 
@@ -79,7 +79,7 @@ a:hover {
 }
 
 .navbar .toggle_btn {
-    color: #04030f;
+    color: #232b2b;
     font-size: 1rem;
     cursor: pointer;
     display: none;
@@ -144,7 +144,7 @@ a:hover {
 }
 
 .action_btn {
-    color: #000000;
+    color: #232b2b;
     text-decoration: none;
     padding: 0.5rem 1rem;
     border: none;
@@ -152,31 +152,31 @@ a:hover {
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all ease;
 }
 
 .btn1 {
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.034);
 }
 
 .btn2 {
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-    background-color: #ffffffe3;
+    background-color: rgba(0, 0, 0, 0.034);
 }
 
 .btn1:hover {
     transform: scale(1.05);
-    color: #ffffff;
+    color: #ffffff ;
     background-color: #FFA500;
 }
 
 .btn2:hover {
     transform: scale(1.05);
-    color: #000000;
-    background-color: rgb(255, 255, 255);
+    color: #ffffff;
+    background-color: rgb(165, 165, 165);
 }
 
 /* Dropdown */
@@ -198,8 +198,22 @@ a:hover {
 .dropdown_menu.open {
     padding-top: 10px;
     display: block;
-    height: 410px;
+    height: 420px;
 }
+
+
+/* Search Box Dropdown Starts */
+
+.search-form-dropdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding: 2px 0 10px 0;
+    margin-bottom: 7px;
+}
+
+/* Search Box Dropdown  END */
 
 .dropdown_menu li {
     display: flex;
@@ -226,19 +240,16 @@ a:hover {
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all ease;
 }
 
 .dropdown_menu #dd_btn {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
-    color: #04030f;
+    color: #232b2b;
     font-size: 1rem;
     font-weight: bold;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px 100px 15px 100px;
 }
 
 .dropdown_menu #dd_btn:hover {
@@ -250,8 +261,8 @@ a:hover {
     text-decoration: none;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
-    color: #04030f;
-    background-color: rgb(255, 255, 255);
+    color: #232b2b;
+    background-color: #fff;
 
 }
 
@@ -259,8 +270,8 @@ a:hover {
     text-decoration: none;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-    color: #04030f;
-    background-color: #ffffff;
+    color: #232b2b;
+    background-color: #fff;
 }
 
 .btn_1:hover {
@@ -281,7 +292,7 @@ a:hover {
     flex-direction: row;
     gap: 10px;
     justify-content: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.582);
+    border-top: 1px solid rgb(255, 255, 255);
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -316,6 +327,10 @@ a:hover {
         height: 80px;
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    .search-form-wide{
+        display: none;
     }
 }
 

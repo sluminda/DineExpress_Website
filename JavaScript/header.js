@@ -7,7 +7,7 @@ const dropDownMenu = document.querySelector('.dropdown_menu')
 
 
 toggleBtn.onclick = function (){
-    console.log('Toggle button clicked');
+    console.log ('Toggle button clicked');
     dropDownMenu.classList.toggle('open')
     const isOpen = dropDownMenu.classList.contains('open')
 
@@ -44,4 +44,32 @@ function onInputBlur() {
         textBox.classList.remove('transition-placeholder');
         isSearchVisible = false;
     }
+}
+
+
+//<!-- Search Bar Dropdown -->
+
+function onButtonClick1() {
+    const textBox = document.getElementById('textInput1');
+
+    if (!isSearchVisible) {
+        textBox.classList.remove('hide');
+        textBox.classList.add('show');
+        textBox.style.width = '170px'; 
+        textBox.focus();
+        textBox.classList.add('transition-placeholder');
+        isSearchVisible = true;
+    }
+}
+
+function onInputBlur1() {
+    const textBox = document.getElementById('textInput1');
+
+    if (isSearchVisible) {
+        textBox.classList.remove('show');
+        textBox.classList.add('hide');
+        textBox.style.width = '0'; 
+        textBox.classList.remove('transition-placeholder');
+        isSearchVisible = false;
+        }
 }
