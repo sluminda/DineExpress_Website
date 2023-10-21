@@ -89,6 +89,7 @@ a:hover {
 
 .search-form-wide {
     display: inline-flex;
+    width: 210px;
 }
 
 .search {
@@ -133,6 +134,19 @@ a:hover {
     padding: 10px;
     cursor: pointer;
     border-radius: 25px;
+}
+
+/* Profile Icon */
+
+.profile_space{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.profile_space #profile{
+    width: 30px;
 }
 
 /* Action BTN Wide */
@@ -328,10 +342,6 @@ a:hover {
         padding-left: 10px;
         padding-right: 10px;
     }
-
-    .search-form-wide{
-        display: none;
-    }
 }
 
 
@@ -370,6 +380,13 @@ a:hover {
     .navbar {
         padding-left: 25px;
         padding-right: 25px;
+    }
+    .search-form-wide{
+        display: none;
+    }
+
+    .profile_space{
+        display: none;
     }
 }
 
