@@ -36,18 +36,32 @@
             <!-- Search bar -->
             <div class="search">
                 <form class="search-form-wide">
-                    <input class="hide" type="text" id="textInput" placeholder="Type Here.." onblur="onInputBlur()">
-                    <button type="button" onclick="onButtonClick()"><i
+                    <input class="hide" type="text" id="textInput" placeholder="Type Here.."
+                        onblur="onSearchInputBlur()">
+                    <button type="button" onclick="onSearchButtonClick()"><i
                             class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
             </div>
 
             <!-- Profile Icon -->
-
             <div class="profile_space">
-                <img src="./Items/Header/Profile.png" alt="Profile Icon" id="profile">
+                <div class="profile_name">
+                    <div id="welcome">Welcome!</div>
+                    <div id="username">Stiles Stilinski</div>
+                </div>
+                <div class="dropdown_profile">
+                    <button class="dropbtn">
+                        <img src="./Items/Header/Profile.png" alt="Profile Icon" id="profile">
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">My Profile</a>
+                        <a href="#">My Cart</a>
+                        <a href="#">Order History</a>
+                        <a href="#">Sign Out</a>
+                    </div>
+                </div>
             </div>
-
             <div class="Action_BTN">
                 <a href="#" class="action_btn btn1">Sign Up</a>
                 <a href="#" class="action_btn btn2">Sign In</a>
@@ -64,11 +78,13 @@
             <a href="#"><img class="icon" src="./Items/Header/4Youtube.png" alt="YouTube"></a>
         </div>
 
+        <!-- Search Bar Dropdown -->
         <div class="dropdown_menu">
             <div class="search">
                 <form class="search-form-dropdown">
-                    <input class="hide" type="text" id="textInput1" placeholder="Type Here.." onblur="onInputBlur1()">
-                    <button type="button" onclick="onButtonClick1()"><i
+                    <input class="hide" type="text" id="textInput1" placeholder="Type Here.."
+                        onblur="onSearchInputBlurDropDown()">
+                    <button type="button" onclick="onSearchButtonClickDropDown()"><i
                             class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
             </div>

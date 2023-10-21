@@ -1,7 +1,7 @@
 .slideshow {
-  position:relative;
+  position: relative;
   top: 0%;
-  height: 65%;
+  height: 75%;
   width: 100%;
 }
 
@@ -27,9 +27,9 @@
 }
 
 .slide .image {
-  height: 100%;
+  height: 75%;
   width: 100%;
-  object-fit:cover;
+  object-fit: cover;
 
 }
 
@@ -38,26 +38,26 @@
   position: absolute;
   top: 55%;
   left: 50%;
-  transform: translate(-50%, -150%);
+  transform: translate(-50%, -110%);
   text-align: center;
   width: 100%;
   z-index: 10;
 }
 
 .image-data span.text {
-  font-family:'open sans', sans-serif;
+  font-family: 'open sans', sans-serif;
   font-size: 30px;
-  font-weight:lighter;
+  font-weight: lighter;
   color: #ffffff;
   font-weight: 400;
 }
 
-h2 span{
+h2 span {
   color: #FFA500;
 }
 
 .image-data h2 {
-  font-family:myCursive0;
+  font-family: myCursive0;
   font-size: 70px;
   font-weight: 600;
   color: #fff;
@@ -73,7 +73,7 @@ h2 span{
 }
 
 a.button {
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   display: inline-block;
   padding: 10px 10px;
@@ -130,7 +130,7 @@ a.button:hover {
   background-color: rgba(255, 255, 255, 0.1)
 }
 
-.swiper-pagination{
+.swiper-pagination {
   padding: 15px;
 }
 
@@ -144,12 +144,20 @@ a.button:hover {
   .image-data h2 {
     margin-top: 10px;
   }
-  
+
   .image-data span.text {
     font-size: 25px;
   }
 
   .image-data h2 {
     font-size: 50px;
+  }
+}
+
+/* Resolution 576px below */
+
+@media (max-width: 576px) {
+  .slide .image-data {
+    transform: translate(-50%, -120%);
   }
 }

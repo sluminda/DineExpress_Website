@@ -6,14 +6,14 @@ const dropDownMenu = document.querySelector('.dropdown_menu')
 
 
 
-toggleBtn.onclick = function (){
-    console.log ('Toggle button clicked');
+toggleBtn.onclick = function () {
+    console.log('Toggle button clicked');
     dropDownMenu.classList.toggle('open')
     const isOpen = dropDownMenu.classList.contains('open')
 
     toggleBtnIcon.classList = isOpen
-    ? 'fa-solid fa-xmark'
-    : 'fa-solid fa-bars'
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
 }
 
 
@@ -21,55 +21,56 @@ toggleBtn.onclick = function (){
 
 let isSearchVisible = false;
 
-function onButtonClick() {
+function onSearchButtonClick() {
     const textBox = document.getElementById('textInput');
 
     if (!isSearchVisible) {
         textBox.classList.remove('hide');
         textBox.classList.add('show');
-        textBox.style.width = '170px'; 
+        textBox.style.width = '170px';
         textBox.focus();
         textBox.classList.add('transition-placeholder');
         isSearchVisible = true;
     }
 }
 
-function onInputBlur() {
+function onSearchInputBlur() {
     const textBox = document.getElementById('textInput');
 
     if (isSearchVisible) {
         textBox.classList.remove('show');
         textBox.classList.add('hide');
-        textBox.style.width = '0'; 
+        textBox.style.width = '0';
         textBox.classList.remove('transition-placeholder');
         isSearchVisible = false;
     }
 }
-
 
 //<!-- Search Bar Dropdown -->
 
-function onButtonClick1() {
+function onSearchButtonClickDropDown() {
     const textBox = document.getElementById('textInput1');
 
     if (!isSearchVisible) {
         textBox.classList.remove('hide');
         textBox.classList.add('show');
-        textBox.style.width = '170px'; 
+        textBox.style.width = '170px';
         textBox.focus();
         textBox.classList.add('transition-placeholder');
         isSearchVisible = true;
     }
 }
 
-function onInputBlur1() {
+function onSearchInputBlurDropDown() {
     const textBox = document.getElementById('textInput1');
 
     if (isSearchVisible) {
         textBox.classList.remove('show');
         textBox.classList.add('hide');
-        textBox.style.width = '0'; 
+        textBox.style.width = '0';
         textBox.classList.remove('transition-placeholder');
         isSearchVisible = false;
-        }
+    }
 }
+
+
