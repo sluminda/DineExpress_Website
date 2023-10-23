@@ -163,6 +163,7 @@ li {
 
 .profile_space {
     display: flex;
+    /* Change value to show */
     justify-content: center;
     align-items: center;
     position: relative;
@@ -235,6 +236,7 @@ button.dropdown-content:hover i.fa-caret-down {
 
 .Action_BTN {
     display: none;
+    /* Change value to show buttons */
     justify-content: center;
     align-items: center;
 }
@@ -278,7 +280,6 @@ button.dropdown-content:hover i.fa-caret-down {
 /* Dropdown */
 
 .dropdown_menu {
-    display: none;
     position: absolute;
     right: 2.8rem;
     top: 80px;
@@ -296,6 +297,131 @@ button.dropdown-content:hover i.fa-caret-down {
     display: block;
     height: 420px;
 }
+
+/* Dropdown Menu Profile */
+
+.sub-menu {
+    font-family: myNormal2;
+}
+
+.profile_nav img {
+    width: 38px;
+}
+
+.user-info #prof {
+    width: 38px;
+}
+
+.profile_space {
+    width: 100%;
+    min-height: 100vh;
+    background: #eceaff;
+    color: #525252;
+}
+
+.profile_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.profile_nav i {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.profile_nav .fa-caret-down {
+    transition: transform 0.3s ease;
+}
+
+.rotated {
+    transform: rotate(180deg);
+}
+
+.user-pic {
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.sub-menu-wrap {
+    position: absolute;
+    top: 140%;
+    right: -11px;
+    min-width: 230px;
+    max-width: 300px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    z-index: 5;
+}
+
+.sub-menu-wrap.open-menu {
+    max-height: 400px;
+}
+
+.sub-menu {
+    background: #fffefe;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+.sub-menu .user-info {
+    display: flex;
+    align-items: center;
+}
+
+.sub-menu .user-info h3 {
+    font-weight: 500;
+}
+
+.user-info #prof {
+    width: 70px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.sub-menu hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #232b2b86;
+    margin: 15px 0 10px;
+}
+
+.sub-menu-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+}
+
+.sub-menu-link p {
+    width: 100%;
+}
+
+.sub-menu-link>i:first-child {
+    background: #e5e5e5;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 15px;
+}
+
+.sub-menu-link span {
+    font-size: 1rem;
+    transition: transform 0.5s;
+}
+
+.sub-menu-link:hover span {
+    transform: translateX(5px);
+}
+
+.sub-menu-link:hover p {
+    font-weight: 600;
+}
+
 
 
 /* Search Box Dropdown Starts */
@@ -329,6 +455,8 @@ button.dropdown-content:hover i.fa-caret-down {
 }
 
 .actionbtn {
+    display: flex;
+    /* Change value to show buttons */
     font-family: Arial, Helvetica, sans-serif;
     padding: 0.5rem 1rem;
     outline: none;
@@ -438,9 +566,9 @@ button.dropdown-content:hover i.fa-caret-down {
     .navbar .links,
     .navbar .action_btn,
     .social,
-    .dropdown_profile,
-    .profile_name {
+    .profile-space {
         display: none;
+        /* Change value to show */
     }
 
     .navbar {
@@ -476,8 +604,7 @@ button.dropdown-content:hover i.fa-caret-down {
 
     header
 
-    /* .navbar { */
-        {
+    .navbar {
         padding: 10px 6px;
     }
 

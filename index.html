@@ -43,24 +43,52 @@
             </div>
 
             <!-- Profile Icon -->
-            <div class="profile_space">
-                <div class="profile_name">
-                    <div id="welcome">Welcome!</div>
-                    <div id="username">Stiles Stilinski</div>
-                </div>
-                <div class="dropdown_profile">
-                    <button class="dropbtn">
-                        <img src="./Items/Template/Header/Profile.png" alt="Profile Icon" id="profile">
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="#">My Profile</a>
-                        <a href="#">My Cart</a>
-                        <a href="#">Order History</a>
-                        <a href="#">Sign Out</a>
+            <div class="profile-space">
+                <nav class="profile_nav">
+                    <img src="./Items/Template/Header/bossbaby.jpg" alt="userpic" class="user-pic"
+                        onclick="toggleMenu()"><i class="fa fa-caret-down" onclick="toggleMenu()" id="rotateIcon"></i>
+                    <div class="sub-menu-wrap" id="subMenu">
+                        <div class="sub-menu">
+                            <div class="user-info">
+                                <img src="./Items/Template/Header/bossbaby.jpg" alt="userpic" id="prof">
+                                <h3>Stiles Stilinski</h3>
+                            </div>
+                            <hr>
+
+                            <a href="#" class="sub-menu-link">
+                                <i class="fa-solid fa-user"></i>
+                                <p>Edit Profile</p>
+                                <span><i class="fa-solid fa-circle-chevron-right"></i></span>
+                            </a>
+
+                            <a href="#" class="sub-menu-link">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <p>My Cart</p>
+                                <span><i class="fa-solid fa-circle-chevron-right"></i></span>
+                            </a>
+
+                            <a href="#" class="sub-menu-link">
+                                <i class="fa-solid fa-clock-rotate-left"></i>
+                                <p>Order History</p>
+                                <span><i class="fa-solid fa-circle-chevron-right"></i></span>
+                            </a>
+
+                            <a href="#" class="sub-menu-link">
+                                <i class="fa-solid fa-phone"></i>
+                                <p>Contact Us</p>
+                                <span><i class="fa-solid fa-circle-chevron-right"></i></span>
+                            </a>
+
+                            <a href="#" class="sub-menu-link">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                <p>Sign Out</p>
+                                <span><i class="fa-solid fa-circle-chevron-right"></i></span>
+                            </a>
+                        </div>
                     </div>
-                </div>
+                </nav>
             </div>
+
             <div class="Action_BTN">
                 <a href="#" class="action_btn btn1">Sign Up</a>
                 <a href="#" class="action_btn btn2">Sign In</a>
@@ -77,7 +105,7 @@
             <a href="#"><img class="icon" src="./Items/Template/Header/4Youtube.png" alt="YouTube"></a>
         </div>
 
-        <!-- Search Bar Dropdown -->
+        <!-- Dropdown menu -->
         <div class="dropdown_menu">
             <div class="search">
                 <form class="search-form-dropdown">

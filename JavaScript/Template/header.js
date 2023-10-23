@@ -74,3 +74,12 @@ function onSearchInputBlurDropDown() {
 }
 
 
+//<!-- Profile Dropdown Menu -->
+
+let subMenu = document.getElementById("subMenu");
+var iconElement = document.getElementById('rotateIcon');
+
+function toggleMenu() {
+    iconElement.classList.toggle('rotated');
+    subMenu.classList.toggle("open-menu");
+}
