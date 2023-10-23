@@ -329,6 +329,7 @@ button.dropdown-content:hover i.fa-caret-down {
 .profile_nav i {
     margin-left: 5px;
     cursor: pointer;
+    color: #232b2bc4;
 }
 
 .profile_nav .fa-caret-down {
