@@ -13,8 +13,8 @@ This project is part of our coursework for ICT NVQ Level 5 at Sri Lanka College 
 
 ## Group Members
 
-- Ashan Kavinda
 - Luminda Saranga
+- Ashan Kavinda
 - Hashini Shehara
 - Pasindu Attanayake
 - Rashmi Kanchana
@@ -59,11 +59,10 @@ DineExpress is designed to make online food ordering a breeze. Here's how you ca
 
 
 
-
 ## Contact
 
-- kavindaa485@gmail.com
 - sluminda@gmail.com
+- kavindaa485@gmail.com
 - hashinishehara0@gmail.com
 
 ---
